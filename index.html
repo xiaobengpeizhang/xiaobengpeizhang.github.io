@@ -86,6 +86,50 @@
 
     <div class="post-list-item article">
       <h3 class="article-header">
+        <a href="/2017/12/17/test/" >
+  读《SQL基础教程》
+</a>
+
+      </h3>
+      
+
+      <div class="article-info">
+        <a href="/2017/12/17/test/"><span class="article-date">
+  2017-12-17
+</span>
+</a>
+        
+
+        
+
+      </div>
+      <div class="article-entry">
+        
+          <h3 id="因为对数据库非常感兴趣，因此最近开始读这本《SQL基础教程》。日本人写的技术书籍还是比较注重趣味性的，读来还是很有趣。这篇文章作为读书的学习笔记。（以MYSQL为例）"><a href="#因为对数据库非常感兴趣，因此最近开始读这本《SQL基础教程》。日本人写的技术书籍还是比较注重趣味性的，读来还是很有趣。这篇文章作为读书的学习笔记。（以MYSQL为例）" class="headerlink" title="因为对数据库非常感兴趣，因此最近开始读这本《SQL基础教程》。日本人写的技术书籍还是比较注重趣味性的，读来还是很有趣。这篇文章作为读书的学习笔记。（以MYSQL为例）"></a>因为对数据库非常感兴趣，因此最近开始读这本《SQL基础教程》。日本人写的技术书籍还是比较注重趣味性的，读来还是很有趣。这篇文章作为读书的学习笔记。（以MYSQL为例）</h3><hr>
+<h3 id="根据编码的不同，可能会发生不能插入中文的情况呢。"><a href="#根据编码的不同，可能会发生不能插入中文的情况呢。" class="headerlink" title="根据编码的不同，可能会发生不能插入中文的情况呢。"></a>根据编码的不同，可能会发生不能插入中文的情况呢。</h3><blockquote>
+<p>更改数据库默认编码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ALTER DATABASE Shop CHARACTER SET UTF8;</span><br></pre></td></tr></table></figure></p>
+<p>更改数据表默认编码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE Products CHARACTER SET UTF8;</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<h3 id="注意改变编码之后，数据库和数据表的默认编码虽然改变了，但是已经写好的字段的编码是不会更改的，需要再手动改变。"><a href="#注意改变编码之后，数据库和数据表的默认编码虽然改变了，但是已经写好的字段的编码是不会更改的，需要再手动改变。" class="headerlink" title="注意改变编码之后，数据库和数据表的默认编码虽然改变了，但是已经写好的字段的编码是不会更改的，需要再手动改变。"></a>注意改变编码之后，数据库和数据表的默认编码虽然改变了，但是已经写好的字段的编码是不会更改的，需要再手动改变。</h3><blockquote>
+<p>查看创建表时的信息<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SHOW CREATE TABLE Products;</span><br></pre></td></tr></table></figure></p>
+<p>更改字段编码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE Products CHANGE Shohin_name Shohin_name VARCHAR(100) CHARACTER SET UTF8;</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+
+        
+      </div>
+    </div>
+
+  
+    </div>
+  
+
+  
+  
+    <div class="post-list">
+  
+
+    <div class="post-list-item article">
+      <h3 class="article-header">
         <a href="/2017/12/14/第一篇文章/" >
   第一篇文章
 </a>
